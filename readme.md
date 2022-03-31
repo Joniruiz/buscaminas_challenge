@@ -19,7 +19,7 @@ npm start
 
 GET. Recibe como parametro un ID ,identificador de una partida , si viene informado se recupera desde un almacenamiento ,si no esta informado se crea una nueva.
 /games Crea una nueva partida
-/games/id Busca una partida por el id solicitado , en caso que no exista arroja un mensaje de error
+/games/id Busca una partida por el id solicitado
 
 POST Guarda una partida ya iniciada y recibe la partida en curso
 /games Recibe por el body 
