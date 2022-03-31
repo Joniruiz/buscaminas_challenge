@@ -21,9 +21,9 @@ GET. Recibe como parametro un ID ,identificador de una partida , si viene inform
 /games Crea una nueva partida<br>
 /games/id Busca una partida por el id solicitado
 
-POST Guarda una partida ya iniciada y recibe la partida en curso
-/games Recibe por el body 
-"id" del juego en cuestion a modificar
+POST Guarda una partida ya iniciada y recibe la partida en curso<br>
+/games Recibe por el body<br> 
+"id" del juego en cuestion a modificar<br>
 "state_id" Modifica el estado de la partida , los valores posibles son 1 , 2 , 3 y representan 1-CREATED , 2- WON , 3-LOST
 
 ## Testing
