@@ -17,8 +17,8 @@ npm start
 
 ## Rutas
 
-GET. Recibe como parametro un ID ,identificador de una partida , si viene informado se recupera desde un almacenamiento ,si no esta informado se crea una nueva.
-/games Crea una nueva partida
+GET. Recibe como parametro un ID ,identificador de una partida , si viene informado se recupera desde un almacenamiento ,si no esta informado se crea una nueva.<br>
+/games Crea una nueva partida<br>
 /games/id Busca una partida por el id solicitado
 
 POST Guarda una partida ya iniciada y recibe la partida en curso
