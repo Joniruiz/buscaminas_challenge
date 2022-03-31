@@ -1,5 +1,5 @@
 const db = require('../database/models');
-const nanoid = require('nanoid');
+
 
 module.exports = {
     createGame: async (req, res) => {
@@ -11,6 +11,7 @@ module.exports = {
                 return db.Game.findByPk(game.dataValues.id, {
                     include: [{
                         model: db.State,
+                        as: 'state',
                     }],
                     attributes: { exclude: ['state_id'] }
                 })
@@ -29,6 +30,7 @@ module.exports = {
             },
             include: [{
                 model: db.State,
+                as: 'state',
             }],
             attributes: { exclude: ['state_id'] }
         })
@@ -51,6 +53,7 @@ module.exports = {
                 },
                 include: [{
                     model: db.State,
+                    as: 'state',
                 }]
             })
             .then(game => {
