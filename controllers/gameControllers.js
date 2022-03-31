@@ -33,7 +33,7 @@ module.exports = {
                 as: 'state',
             }],
             attributes: { exclude: ['state_id'] }
-        })
+            })
             .then(game => {
                 res.json({ game: game, cells: [] });
             })
@@ -57,12 +57,18 @@ module.exports = {
                 }]
             })
             .then(game => {
+                if(game[0] == 1){
                 res.json({
                     message: 'Game updated',
+                })
+            }else{
+                 res.json({
+                    message: 'Game not updated',
                 });
+                }
             })
             .catch(err => {
-                res.json(err);
+                res.json({err});
             })
-    }
+    },
 }
